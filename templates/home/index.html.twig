@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<div id="Response" class="flex flex-row w-full items-center justify-center mt-10" >
+    {{ reponse |nl2br }}
+</div>
+
+
+<h1 class="flex flex-row text-3xl font-bold underline items-center justify-center mb-10 mt-10">
+Chat GPT-test</h1>
+
+<form action="">
+    <div class="flex flex-col justify-center items-center">
+        <div class="mb-3 xl:w-96">
+            <label for="exampleFormControlInput1" class="form-label inline-block mb-2 text-gray-700"
+            >Example label</label
+            >
+            <input name="quiz"
+                    type="text"
+                    class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    id="exampleFormControlInput1"
+                    placeholder="Example label" />
+        </div>
+
+        <input type="submit" value="Valider" class="nline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" >
+    </div>
+
+
+
+</form>
+
+
+<div id="Response" class="flex flex-row w-full items-center justify-center mt-10" >
+    <img src="{{ imageUrl }}" alt="">
+</div>
+
+
+
+<h1 class="flex flex-row text-3xl font-bold underline items-center justify-center mb-10 mt-10">
+    Généer image</h1>
+
+<form action="">
+    <div class="flex flex-col justify-center items-center">
+        <div class="mb-3 xl:w-96">
+            <label for="exampleFormControlInput1" class="form-label inline-block mb-2 text-gray-700">Example label</label
+            >
+            <input name="quiz-image"
+                   type="text"
+                   class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                   id="exampleFormControlInput1"
+                   placeholder="Example label" />
+        </div>
+
+        <input type="submit" value="Valider" class="nline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" >
+    </div>
+
+
+</form>
+
+
+</body>
+</html>
